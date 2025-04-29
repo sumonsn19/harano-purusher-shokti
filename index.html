@@ -1,102 +1,101 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আরদে খুরমা</title>
-    <style>
-        body { font-family: 'Hind Siliguri', sans-serif; margin: 0; padding: 0; background: #f5fff5; color: #222; }
-        header { background: #006400; color: white; padding: 30px; text-align: center; }
-        h1 { margin: 0; }
-        .banner { background: url('https://i.ibb.co/0CND2hP/banner.jpg') no-repeat center center; height: 300px; background-size: cover; }
-        .section { padding: 30px; }
-        .products { display: flex; justify-content: center; flex-wrap: wrap; }
-        .product {
-            background: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            width: 320px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .product img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-        .footer {
-            background: #003300;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        button {
-            background: #28a745;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .order-form { text-align: center; margin-top: 30px; }
-        .order-form input {
-            padding: 10px;
-            margin: 10px;
-            width: 80%;
-            max-width: 300px;
-            font-size: 16px;
-        }
-        .order-form button {
-            background: #28a745;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Naturals - আরদে খুরমা</title>
+  <style>
+    body {
+      font-family: 'Hind Siliguri', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4fdf4;
+      color: #222;
+    }
+    header {
+      background: #006400;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .banner {
+      background: url('https://i.ibb.co/0CND2hP/banner.jpg') no-repeat center center;
+      height: 300px;
+      background-size: cover;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .product {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      font-size: 24px;
+      color: #28a745;
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+    .contact {
+      margin-top: 40px;
+      background: #e0ffe0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .footer {
+      background: #003300;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>আরদে খুরমা</h1>
-    <p>প্রাকৃতিক উপায়ে পুরুষের শক্তি বৃদ্ধি</p>
+  <h1>আরদে খুরমা</h1>
+  <p>পুরুষের দুর্বলতা দূর করে প্রাকৃতিক উপায়ে শক্তি বৃদ্ধি</p>
 </header>
 
 <div class="banner"></div>
 
-<section class="section">
-    <h2>পণ্যের বিবরণ</h2>
-    <div class="products">
-        <div class="product">
-            <img src="https://i.ibb.co/yYvWymX/product.jpg" alt="আরদে খুরমা">
-            <h3>আরদে খুরমা</h3>
-            <p>পুরুষের শক্তি বৃদ্ধিতে সহায়ক, ১০০% প্রাকৃতিক হার্বাল উপাদানে প্রস্তুত।</p>
-            <p><strong>মূল্য: ১২০০ টাকা</strong></p>
-            <button onclick="document.getElementById('order-form').scrollIntoView();">অর্ডার করুন</button>
-        </div>
-    </div>
-</section>
+<div class="container">
+  <div class="product">
+    <img src="https://i.ibb.co/yYvWymX/product.jpg" alt="আরদে খুরমা">
+    <h2>আরদে খুরমা ইউনানি ঔষধ</h2>
+    <p>১০০% প্রাকৃতিক হার্বাল উপাদানে প্রস্তুত। কোন পার্শ্বপ্রতিক্রিয়া নেই।</p>
+    <p class="price">মূল্য: ১২০০ টাকা</p>
+    <a href="https://wa.me/8801845000548" class="btn" target="_blank">অর্ডার করুন WhatsApp</a>
+  </div>
 
-<section class="order-form" id="order-form">
-    <h2>অর্ডার ফর্ম</h2>
-    <form action="https://wa.me/8801845000548" method="get" target="_blank">
-        <input type="text" name="name" placeholder="আপনার নাম" required><br>
-        <input type="text" name="phone" placeholder="আপনার ফোন নম্বর" required><br>
-        <input type="text" name="address" placeholder="আপনার ঠিকানা" required><br>
-        <button type="submit">WhatsApp-এ অর্ডার করুন</button>
-    </form>
-</section>
-
-<section class="section">
-    <h2>যোগাযোগ করুন</h2>
-    <p>📞 ০১৮৪৫০০০৫৪৮<br>📍 ঢাকা, বাংলাদেশ<br>📱 WhatsApp: ০১৮৪৫০০০৫৪৮</p>
-</section>
+  <div class="contact">
+    <h3>যোগাযোগ করুন</h3>
+    <p>📞 ০১৮৪৫০০০৫৪৮</p>
+    <p>📍 ঢাকা, বাংলাদেশ</p>
+    <p>📱 WhatsApp: ০১৮৪৫০০০৫৪৮</p>
+  </div>
+</div>
 
 <div class="footer">
-    &copy; ২০২৫ আরদে খুরমা | সর্বস্বত্ব সংরক্ষিত
+  &copy; ২০২৫ আরদে খুরমা | সর্বস্বত্ব সংরক্ষিত
 </div>
 
 </body>
